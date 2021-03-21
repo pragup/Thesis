@@ -1,0 +1,28 @@
+\chapter{Introduction}
+\emph{Additive manufacturing} refers to any process that adds material  to create a 3D object. %
+3D printing is a popular form of additive manufacturing that deposits material (plastic, metal, biomaterial, polymer, etc.) in layer by layer fashion. % to form the object.
+We focus on extrusion based 3D printing, in which material is pushed out of an extruder that follows some tool path while depositing material in beads that meld together upon contact.
+In this paper, we will refer to this process simply as $3$D printing.$3$D printing process can be divided into $2$ categories \textit{sparse fill} and \textit{dense fill}. Sparse fill, when printing a lattice in a given polygon. Dense fill, when printing complete interior of the polygon.
+
+Consider the problem sparse fill problem where we cover the interior space by printing an \emph{infill lattice} \cite{BrBrWiHa2012,WuAaWeSi2018}, which is typically a standard mesh where any two edges meet at most at a vertex.
+In large scale additive manufacturing,  printing most, if not all, edges of the infill lattice in a contiguous manner is critical to decrease non-print motions of the printer-head.
+The problem of coverage path planning in robotics seeks to find a path that passes through all points while avoiding obstacles \cite{GaCa2013}.
+Standard approaches for such coverage problems employ graph-based algorithms \cite{Xu2011}.
+A robot is typically required to cover all vertices and edges of the graph, while using the edges sequentially without repetition \cite{CaHuHa1988}.
+Traversing the edges along an Eulerian tour is required to address these challenges.
+But the graph made of the vertices and edges in a cell complex is not always guaranteed to contain an Eulerian tour. It motivated the development of our work [\cite{GuKrDr2020}, \cite{GuKr2018}].
+
+We study {\it dense infill} 3d printing problems, where a given region is completely covered by depositing material with an extruder.
+  Design of the tool path, i.e., the sequence in which the extruder moves while depositing material, has crucial implications on print quality as well as mechanical properties of the printed object.
+  %\delete{In particular, poor tool paths could contribute to print failures, especially in large scale 3d printing.}
+  The extruder can go over non-print or previously printed regions with idle movements.
+  Two problems closely related to 3d printing are milling and lawn mowing.
+  But in the milling problem, the cutter cannot exit the region (pocket) that it has to cover.  
+  The lawn mowing problem is similar to 3d printing problem since the cutter can mow over non grass as well as already mowed regions.
+  But one wants to minimize non-print movement in 3d printing in order to improve efficiency.
+  
+  Various geometric tool path patterns are used such as zigzag, spiral, and contour parallel, but most of them suffer from directional bias.
+  For instance, spiral and contour parallel tool paths do not allow cross weaving between adjacent layers.
+  More generally, aspects of tool path design across multiple layers and their effects on mechanical properties of the printed objects have not been studied in detail.
+  This motivated the development of our framework for optimization based tool path planning, where we can optimize the tool path based on multiple criteria.
+  At the same time, we show that the 3d printing tool path optimization problem is NP-hard, and hence large instances become much harder to solve.

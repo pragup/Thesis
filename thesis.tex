@@ -1,0 +1,268 @@
+% Page number location defaults to bottom-center
+% Use \documentclass[pagenumtop]{wsu-thesis} to get page numbers at top-right
+%email JMcDonald1@wsu.edu for latex help
+\documentclass{wsu-thesis}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Packages used in paper %%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath,amsfonts,amssymb,amsthm,array}
+\usepackage{commath}
+\usepackage{bm,color,setspace,graphicx,times}
+\usepackage{wrapfig,subcaption}
+\usepackage{algorithm}
+\usepackage[noend]{algpseudocode}
+\usepackage{mathtools}
+\usepackage{comment}
+%\usepackage[margin=1in]{geometry}
+% Editing commands requiring color package
+\newcommand{\add}[1]{\textcolor{blue}{#1}}
+\usepackage[normalem]{ulem}
+\newcommand{\delete}[1]{\textcolor{red}{\sout{#1}}}
+\definecolor{darkgrn}{rgb}{0, 0.8, 0}
+\newcommand{\modified}[1]{\textcolor{darkgrn}{#1}}
+
+\newcommand{\txbl}[1]{\textcolor{blue}{#1}}
+\newcommand{\txrd}[1]{\textcolor{red}{#1}}
+\newcommand{\txgr}[1]{\textcolor{green}{#1}}
+\newcommand{\txcr}[1]{\textcolor{crimson}{#1}}
+
+
+% shortcut commands
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+
+\theoremstyle{plain}
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{defn}[thm]{Definition}
+\newtheorem{claim}[thm]{Claim}
+\newtheorem{asmn}[thm]{Assumption}
+\newtheorem{con}[thm]{Conjecture}
+\newtheorem{rem}[thm]{Remark}
+\newtheorem{case}{Case}
+
+
+\newtheorem*{note}{\color{blue}\textbf{Note}}
+\usepackage[nameinlink,noabbrev,capitalize]{cleveref} 
+\crefalias{subequation}{equation}
+\crefalias{thm}{theorem}
+
+
+% to make cleveref print ``Lemma'' for lemma
+\let\oldlemma\lem
+\renewcommand{\lem}{%
+  \crefalias{thm}{lem}% Theorem counter now looks like Lemma
+  \oldlemma}
+\Crefname{lem}{Lemma}{Lemmas}
+
+% to make cleveref print ``Definition for definition
+\let\olddefn\defn
+\renewcommand{\defn}{%
+  \crefalias{thm}{defn}% Theorem counter now looks like Definition
+  \olddefn}
+\Crefname{defn}{Definition}{Definitions}
+
+% to make cleveref print ``Remark for remark
+\let\oldrem\rem
+\renewcommand{\rem}{%
+  \crefalias{thm}{rem}% Theorem counter now looks like Remark
+  \oldrem}
+\Crefname{rem}{Remark}{Remarks}
+
+% to make cleveref print ``Corollary for corollary
+\let\oldcor\cor
+\renewcommand{\cor}{%
+  \crefalias{thm}{cor}% Theorem counter now looks like Corollary
+  \oldcor}
+\Crefname{cor}{Corollary}{Corollaries}
+
+% to make cleveref print ``Claim for claim
+\let\oldclaim\claim
+\renewcommand{\claim}{%
+  \crefalias{thm}{claim}% Theorem counter now looks like Claim
+  \oldclaim}
+\Crefname{claim}{Claim}{Claims}
+
+% to make cleveref print ``Proposition for prop
+\let\oldprop\prop
+\renewcommand{\prop}{%
+  \crefalias{thm}{prop}% Theorem counter now looks like Prop
+  \oldprop}
+\Crefname{prop}{Proposition}{Propositions}
+
+% to make cleveref print ``Conjecture for conj
+\let\oldcon\con
+\renewcommand{\con}{%
+  \crefalias{thm}{con}% Theorem counter now looks like Con
+  \oldcon}
+\Crefname{con}{Conjecture}{Conjectures}
+
+% to make cleveref print ``Assumption for asmn
+\let\oldasmn\asmn
+\renewcommand{\asmn}{%
+  \crefalias{thm}{asmn}% Theorem counter now looks like Asmn
+  \oldasmn}
+\Crefname{asmn}{Assumption}{Assumptions}
+
+
+\newcommand{\R}{ {\mathbb R} }
+\newcommand{\Z}{ {\mathbb Z} }
+\newcommand{\hK}{\hat{K}}
+\newcommand{\hk}{\hat{k}}
+\newcommand{\hV}{\hat{V}}
+\newcommand{\hD}{\hat{D}}
+\newcommand{\hE}{\hat{E}}
+\newcommand{\he}{\hat{e}}
+\newcommand{\hF}{\hat{F}}
+\newcommand{\hT}{\hat{T}}
+\newcommand{\hG}{\hat{G}}
+\newcommand{\hu}{\hat{u}}
+\newcommand{\hv}{\hat{v}}
+\newcommand{\hf}{\hat{f}}
+\newcommand{\htt}{\hat{t}}
+\newcommand{\ttt}{\tilde{t}}
+\newcommand{\hrho}{\hat{\rho}}
+\newcommand{\CH}{\mathcal{C}^H}
+\newcommand{\CO}{\mathcal{C}^O}
+\newcommand{\hCH}{\hat{\mathcal{C}}^H}
+\newcommand{\hCO}{\hat{\mathcal{C}}^O}
+\newcommand{\sT}{\mathcal{T}}
+\newcommand{\cP}{\mathcal{P}}
+%\newcommand{\tf}{\tilde{f}}
+
+%\newcommand{\diam}{\operatorname{D}}
+%\newcommand{\per}{\operatorname{P}}
+%\newcommand{\area}{\operatorname{A}}
+%\newcommand{\g}{\gamma}
+%\newcommand{\gl}{\lambda} % Greek l
+%\newcommand{\ghf}{\gamma(\hf)}
+
+\newcommand{\tK}{\tilde{K}}
+\newcommand{\tG}{\tilde{G}}
+\newcommand{\tR}{\tilde{R}}
+\newcommand{\cK}{\check{K}}
+\newcommand{\te}{\tilde{e}}
+\newcommand{\tf}{\tilde{f}}
+\newcommand{\tv}{\tilde{v}}
+\newcommand{\tP}{\tilde{P}}
+
+\newcommand{\vx}{\mathbf{x}}
+\newcommand{\vy}{\mathbf{y}}
+
+\newcommand{\diam}{\operatorname{D}}
+\newcommand{\per}{\operatorname{P}}
+\newcommand{\area}{\operatorname{A}}
+\newcommand{\g}{\gamma}
+\newcommand{\gl}{\lambda} % Greek l
+\newcommand{\ghf}{\gamma(\hf)}
+
+\newcommand{\Ps}{\mathcal{P}} % set of all polygons
+
+%\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\newcommand{\p}{\phantom{-}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Some packages are already added by the wsu-thesis class
+% Check the wsu-thesis.cls file if you have any issues
+%\usepackage{graphicx}
+\graphicspath{{\figuredir/}} %\figuredir defined below
+\usepackage{tensor}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage[numbers]{natbib}
+\usepackage{xcolor} % Remove after notes are no longer needed
+
+
+
+
+% Front matter information
+% Title needs to be inverted pyramid shape, may need manual breaks using \\
+\title{Algorithms for Path Planning in 3D printing}
+%Use your full name as it appears on your transcripts}
+\author{Prashant Gupta}
+%Indicate if it is a Dissertation (doctoral) or Thesis (master's)
+\thesistype{Dissertation}
+%Fill out the full degree name
+\degree{Doctor of Philosophy}
+%Official name of department, school, program,nor college that grants your degree
+\department{Department of Mathematics and Statistics}
+%Fill out the month your degree is awarded, rather than the month you defend.
+\submitmonth{May}
+\submityear{2021}
+
+% Useful definitions
+\newcommand{\phd}{Ph.D.}
+\newcommand{\chapterdir}{./chapters}
+\newcommand{\frontmatterdir}{./front-matter}
+\newcommand{\appendixdir}{./appendices}
+\newcommand{\referencedir}{./references}
+\newcommand{\figuredir}{./figures}
+
+
+
+
+\begin{document}
+% Create title page and blank second page
+% Use \maketitle* if you wish to remove copyright info
+\maketitle
+
+% Create signature page with requisite text
+\begin{signaturepage}
+  % \signature creates line for signature with committee member's full
+  % name and degree.  Make sure you check with each committee member so that you have this correct before you print your  cotton pages.  Comment out or delete extra lines or [Co-chair]
+  \signature{Bala Krishnamoorthy}{\phd}[Chair]
+  \signature{Kevin R. Vixie}{\phd}
+  \signature{Matt Hudelson}{\phd}
+\end{signaturepage}
+
+% Acknowledgement page is optional, remove if not needed
+% The title can be changed with \begin{acknowledgements}[New Title]
+\begin{acknowledgements}
+  \input{\frontmatterdir/acknowledgements}
+\end{acknowledgements}
+
+% Abstract arguments are degree YOU are earning and committee chair(s) names
+\begin{abstract}{\phd}{Bala Krishnamoorthy}
+  \input{\frontmatterdir/abstract}
+\end{abstract}
+
+% Remove List of Figures or List of Tables if not needed
+\tableofcontents
+\listoffigures
+\listoftables
+
+% Dedication page is optional, remove if not needed
+% The title can be changed with \begin{dedication}[New Title]
+\begin{dedication}
+  \input{\frontmatterdir/dedication}
+\end{dedication}
+
+% Main chapters
+\begin{mainchapters}
+  \input{\chapterdir/chapter0}
+  \input{\chapterdir/chapter1}
+  \input{\chapterdir/chapter2}
+  \input{\chapterdir/chapter3}
+  \input{\chapterdir/chapter4}
+\end{mainchapters}
+
+% Enter the relative directory for your .bib file here
+% Default title is ``Bibliography'' and can be
+% changed with \makebibliography{bibfile}[New Title]
+
+%\makebibliography{\referencedir/references}
+\bibliographystyle{plain}
+%\bibliography{references/EulerTransformation.bbltex}
+\bibliography{references/Tool_Path_AM, references/homology, references/flatnorm, references/IP_Crypt_Refs}
+% Appendices, remove if not needed
+%\begin{appendices}
+%  \input{\appendixdir/appendixa}
+%\end{appendices}
+
+
+\end{document} 

@@ -1,0 +1,42 @@
+\chapter{Future Scope}
+Not all cells in the Euler transformation $\hK$ are guaranteed to be convex, even when all cells in $K$ are (see \cref{fig:disjholes}).
+We could triangulate the non-convex cells so that all cells in $\hK$ are convex.
+But could we do so while maintaining even degrees for all vertices?
+A related problem is that of finding a triangulation (rather than a cell complex) of a given domain that minimizes the number of odd-degree vertices.
+The total Euclidean length of edges is $\tilde{K}$ is going to be at least double compared to that in the original complex in $K$.
+Hence it is better to start with a sparse input complex $K$ (i.e., with a smaller total Euclidean length of edges).
+We have described a complete framework for continuous tool path planning in layer-by-layer 3D printing.
+The clipping step will be bottlenecked by the computation of intersection of the Euler transformed complex with each polygon in each layer.
+We have generalized the Euler transformation defined to allow combinatorial changes when computing mitered offsets of cells.
+What about allowing topological changes?
+It appears applying the generalized Euler transformation should be able to generate an Euler complex even when topological changes are allowed.
+But there might be some new geometric challenges generated in this process, which would have to be taken care of.
+We will address this question in future work.
+Another promising generalization of our approach would be to \emph{non-planar} 3D printing.
+Many of our results should generalize to the non-planar realm as long as underlying support is guaranteed by the design.
+
+We have developed a decomposition approach to solve large instances of optimized path planning problem in 3d printing where each sub-polygon is guaranteed to have a dual graph with a feasible tool path. 
+Our framework guarantees that discontinuities in the tool path, if any, are located only at the boundary of the original (input) polygon.
+Further, we can change the Hilbert ordering of the cells by changing enter and exit corner vertices of the initial cell in the quadtree.
+We can also create various decompositions for the same IOP by changing parameters $\delta$ and $\Delta$.
+
+The edge weights in our graphical framework could model multiple quality factors including turn costs, edge overlap across adjacent layers, tool path length, and others.
+Our mechanical testing has shown that changing the extent of overlap across layers could impact the mechanical strength of the printed object.
+Another potential application of our framework is the optimization of internal microstructure and thermal management by choosing appropriately defined edge weights derived from physical models and/or experiments, which in turn could result in increased strength of the printed objects.
+
+For the Buddha and Bunny together, our framework solved more than 10,000 IP subproblems across more than 500 layers.
+These IP instances could be solved independently, and hence in an embarrassingly parallel fashion.
+Alternatively, our framework allows the use of approximation algorithms or heuristics to solve the subproblems instead of using IP \cite{ApBiChCo2007}.
+We could also reuse optimal solutions for cells that reoccur across multiple layers.
+Using uniform edge weights, and varying the relative importance parameter $\alpha$ (Equation \ref{eq:IPobj}), we could obtain fractal-like patterns for the toolpath.  
+
+If we solve the full IP model (including subtour constraint \ref{eq:IPsubtr}), any discontinuities in the tool path are located at the boundary of the original polygon. 
+This could be especially of concern when the polygon is relatively thin as compared to size of extruder.
+We could consider reducing the extruder size to handle such situations, or consider alternative methods (e.g., spiral or zigzag patterns).
+%\textcolor{blue}{With} relaxed IP model and associated heuristics, we cannot guarantee a single continuous path for each cell.
+In extreme cases where the polygon in a given layer has many sharp curvature regions, we could have many small sized sub-polygons near the boundary.
+This setting could create several discontinuities in the tool path at the boundary.
+We will explore methods to handle such extreme cases in our future work.
+
+Our mechanical testing experiments (Section \ref{sec:mechtest}), while preliminary, already demonstrate that the amount of edge overlap across adjacent layers could significantly affect the strength of the print.
+We plan to employ the SFCDecomp framework to study in detail the effects of tool path design as well as edge overlap across layers on various mechanical properties.

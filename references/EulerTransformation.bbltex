@@ -1,0 +1,200 @@
+\begin{thebibliography}{10}
+
+\bibitem{AiAuAlGa1995}
+Oswin Aichholzer, Franz Aurenhammer, David Alberts, and Bernd G{\"{a}}rtner.
+\newblock A novel type of skeleton for polygons.
+\newblock {\em Journal of Universal Computer Science}, 1(12):752--761, 1995.
+
+\bibitem{AiHaHoPiRoSpVo2009}
+Oswin Aichholzer, Thomas Hackl, Michael Hoffmann, Alexander Pilz, G{\"u}nter
+  Rote, Bettina Speckmann, and Birgit Vogtenhuber.
+\newblock Plane graphs with parity constraints.
+\newblock In Frank K. H.~A. Dehne, Marina~L. Gavrilova,
+  J{\"{o}}rg{-}R{\"{u}}diger Sack, and Csaba~D. T{\'{o}}th, editors, {\em
+  Algorithms and Data Structures, 11th International Symposium, {WADS} 2009,
+  Banff, Canada, August 21-23, 2009. Proceedings}, volume 5664 of {\em Lecture
+  Notes in Computer Science}, pages 13--24. Springer, 2009.
+
+\bibitem{AiHaHoPiRoSpVo2014}
+Oswin Aichholzer, Thomas Hackl, Michael Hoffmann, Alexander Pilz, G{\"u}nter
+  Rote, Bettina Speckmann, and Birgit Vogtenhuber.
+\newblock Plane graphs with parity constraints.
+\newblock {\em Graphs and Combinatorics}, 30(1):47--69, \delete{Jan} 2014.
+
+\bibitem{Al2015}
+Victor Alvarez.
+\newblock Parity-{C}onstrained {T}riangulations with {S}teiner points.
+\newblock {\em Graphs and Combinatorics}, 31(1):35--57, \delete{Jan} 2015.
+
+\bibitem{AuWa2013}
+Franz Aurenhammer and Gernot Walzl.
+\newblock Three-dimensional straight skeletons from bisector graphs.
+\newblock In {\em Proceedings of 5th International Conference Analytical Number
+  Theory and Spatial Tessellations}, pages 15--29, 2013.
+
+\bibitem{AuWa2016}
+Franz Aurenhammer and Gernot Walzl.
+\newblock Straight skeletons and mitered offsets of nonconvex polytopes.
+\newblock {\em Discrete and Computational Geometry}, 56(3):743--801, 2016.
+
+\bibitem{BaEpGoVa2008}
+Gill Barequet, David Eppstein, Michael~T. Goodrich, and Amir Vaxman.
+\newblock Straight skeletons of three-dimensional polyhedra.
+\newblock In {\em Proceedings of the 16th Annual European Symposium on
+  Algorithms}, ESA '08, pages 148--160, Berlin, Heidelberg, 2008.
+  Springer-Verlag.
+
+\bibitem{BrBrWiHa2012}
+J.~Brennan-Craddock, D.~Brackett, R.~Wildman, and R.~Hague.
+\newblock The design of impact absorbing structures for additive manufacture.
+\newblock {\em Journal of Physics: Conference Series}, 382(1):012042, 2012.
+
+\bibitem{CaHuHa1988}
+Zuo~Llang Cao, Yuyu Huang, and Ernest~L. Hall.
+\newblock Region filling operations with random obstacle avoidance for mobile
+  robots.
+\newblock {\em Journal of Robotic Systems}, 5(2):87--102, 1988.
+
+\vspace*{-0.2in}
+\add{\bibitem{CatmullClark1978}
+Edwin~E. Catmull and James~H. Clark.
+\newblock Recursively generated {B}-spline surfaces on arbitrary topological
+  meshes.
+\newblock {\em Computer-Aided Design}, 10(6):350--355, 1978.
+}
+
+\bibitem{ChDeSh2012}
+Siu-Wing Cheng, Tamal~K. Dey, and Jonathan~R. Shewchuk.
+\newblock {\em Delaunay Mesh Generation}.
+\newblock CRC Press, 2012.
+
+\vspace*{-0.2in}
+\add{\bibitem{DoSa1978}
+Daniel Doo and Malcolm Sabin.
+\newblock Behaviour of recursive division surfaces near extraordinary points.
+\newblock {\em Computer-Aided Design}, 10(6):356--360, 1978.
+}
+
+\bibitem{Ed1999}
+Herbert Edelsbrunner.
+\newblock Deformable smooth surface design.
+\newblock {\em Discrete {\&} Computational Geometry}, 21(1):87--115, \delete{Jan} 1999.
+
+\bibitem{Eu1736}
+Leonhard Euler.
+\newblock Solutio problematis ad geometriam situs pertinentis.
+\newblock {\em Commentarii Academiae Scientiarum Imperialis Petropolitanae},
+  8:128--140, 1736.
+
+\bibitem{FlGiSu2014}
+Michael Floater, Andrew Gillette, and N.~Sukumar.
+\newblock Gradient bounds for wachspress coordinates on polytopes.
+\newblock {\em SIAM Journal on Numerical Analysis}, 52(1):515--532, 2014.
+
+\bibitem{GaCa2013}
+Enric Galceran and Marc Carreras.
+\newblock A survey on coverage path planning for robotics.
+\newblock {\em Robotics and Autonomous Systems}, 61(12):1258--1276, 2013.
+
+\bibitem{GaMoAbMa2006}
+Santiago Garrido, Luis Moreno, Mohamed Abderrahim, and Fernando Martin.
+\newblock Path planning for mobile robot navigation using voronoi diagram and
+  fast marching.
+\newblock In {\em 2006 IEEE/RSJ International Conference on Intelligent Robots
+  and Systems}, pages 2376--2381, \delete{Oct} 2006.
+
+\bibitem{GeGu2018}
+Laxmi~P. Gewali and Bhaikaji Gurung.
+\newblock Degree aware triangulation of annular regions.
+\newblock In Shahram Latifi, editor, {\em Information Technology - New
+  Generations}, pages 683--690. Springer International Publishing, 2018.
+
+\bibitem{GiRaBa2012}
+Andrew Gillette, Alexander Rand, and Chandrajit Bajaj.
+\newblock Error estimates for generalized barycentric interpolation.
+\newblock {\em Advances in Computational Mathematics}, 37(3):417--439, \delete{Oct}
+  2012.
+
+\bibitem{GuKrDr2020}
+Prashant Gupta, Bala Krishnamoorthy, and Gregory Dreifus.
+\newblock Continuous toolpath planning in a graphical framework for sparse
+  infill additive manufacturing.
+\newblock {\em Computer-Aided Design}, 127:102880, 2020.
+
+\bibitem{Hatcher2002}
+Allen Hatcher.
+\newblock {\em Algebraic Topology}.
+\newblock Cambridge University Press, Cambridge, 2002.
+
+\bibitem{Hi1873}
+Carl Hierholzer and Chr Wiener.
+\newblock Ueber die m{\"o}glichkeit, einen linienzug ohne wiederholung und ohne
+  unterbrechung zu umfahren.
+\newblock {\em Mathematische Annalen}, 6(1):30--32, 1873.
+
+\bibitem{HoKr1996}
+Frank Hoffmann and Klaus Kriegel.
+\newblock A graph-coloring result and its consequences for polygon-guarding
+  problems.
+\newblock {\em SIAM Journal on Discrete Mathematics}, 9(2):210--224, 1996.
+
+\bibitem{Ja1993}
+Klaus Jansen.
+\newblock One strike against the min-max degree triangulation problem.
+\newblock {\em Computational Geometry}, 3(2):107--120, 1993.
+
+\bibitem{LiEbZh2009}
+Xinghua Liang, Mohamed~S. Ebeida, and Yongjie Zhang.
+\newblock Guaranteed-quality all-quadrilateral mesh generation with feature
+  preservation.
+\newblock In Brett~W. Clark, editor, {\em Proceedings of the 18th International
+  Meshing Roundtable}, pages 45--63. Springer Berlin Heidelberg, 2009.
+
+\bibitem{MaViPl2011}
+Jon{\'a}s Martinez, Marc Vigo, and Nuria Pla-Garcia.
+\newblock Skeleton computation of orthogonal polyhedra.
+\newblock {\em Computer Graphics Forum}, 30(5):1573--1582, 2011.
+
+\bibitem{MuWaWa2014}
+Lin Mu, Xiaoshen Wang, and Yanqiu Wang.
+\newblock Shape regularity conditions for polygonal/polyhedral meshes,
+  exemplified in a discontinuous {G}alerkin discretization.
+\newblock {\em Numerical Methods for Partial Differential Equations},
+  31(1):308--325, 2014.
+
+\bibitem{Munkres1984}
+James~R. Munkres.
+\newblock {\em Elements of Algebraic Topology}.
+\newblock Addison--Wesley Publishing Company, Menlo Park, 1984.
+
+\bibitem{PeRaUr2010}
+Canek Pel{\'a}ez, Adriana Ram{\'i}ırez-Vigueras, and Jorge Urrutia.
+\newblock Triangulations with many points of even degree.
+\newblock In {\em Proceedings of the 22nd Annual Canadian Conference on
+  Computational Geometry}, CCCG 2010, pages 103--106, 2010.
+
+\bibitem{ScAw2000}
+Paul~R. Scott and Poh~Wah Awyong.
+\newblock Inequalities for convex sets.
+\newblock {\em Bulletin of the Australian Mathematical Society}, pages
+  237--245, 2000.
+
+\bibitem{Si2010}
+Hang Si.
+\newblock Constrained {D}elaunay tetrahedral mesh generation and refinement.
+\newblock {\em Finite Elements in Analysis and Design}, 46:33--46, \delete{January}
+  2010.
+
+\bibitem{WuAaWeSi2018}
+Jun Wu, Niels Aage, R\"{u}diger Westermann, and Ole Sigmund.
+\newblock {Infill Optimization for Additive Manufacturing--Approaching
+  Bone-Like Porous Structures}.
+\newblock {\em IEEE Transactions on Visualization and Computer Graphics},
+  24(2):1127--1140, \delete{Feb} 2018.
+
+\bibitem{Xu2011}
+Ling Xu.
+\newblock {\em Graph Planning for Environmental Coverage}.
+\newblock PhD thesis, Carnegie Mellon University, Pittsburgh, PA, \delete{August} 2011.
+
+\end{thebibliography}

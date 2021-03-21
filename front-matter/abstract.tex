@@ -1,0 +1,13 @@
+In my thesis I have addressed the questions on path planning by tackling problems related to geometry and tool path traversal in a graphical setting. By using graphical models in the tool path planning, we can ensure the required mechanical properties are satisfied by imposing appropriate constraints. The overall goal is to characterize the mathematical aspects of the AM problem and to develop efficient algorithms with provable guarantees of performance and quality for tool path planning. I have creatively used mathematical techniques from combinatorial and computational topology, discrete optimization, computational complexity, graph theory, and computational geometry for theoretical results and to design and implement efficient algorithms.
+
+%%%%%%%%%%%%%% Paper 1 %%%%%%%%%%%%%%%%
+We propose an \emph{Euler transformation} that transforms a given $d$-dimensional cell complex $K$ for $d=2,3$ into a new $d$-complex $\hK$ in which every vertex is part of a same even number of edges. Hence every vertex in the graph $\hG$ that is the $1$-skeleton of $\hK$ has an even degree, which makes $\hG$ Eulerian, i.e., it is guaranteed to contain an Eulerian tour. Meshes whose edges admit Eulerian tours are crucial in coverage problems arising in several applications including 3D printing and robotics.
+
+%%%%%%%%%%% Paper 2 %%%%%%%%%%%%%%%
+We develop a framework that creates a new polygonal mesh representation of the 3D domain of a layer-by-layer 3D printing job on which we identify single, \emph{continuous} tool paths covering each connected piece of the domain in every layer.We present a tool path algorithm that traverses each such continuous tool path with \emph{no crossovers}.
+
+%%%%%%%%%%% Paper 3 %%%%%%%%%%%%%%%  
+We explore efficient optimization of toolpaths based on multiple criteria for large instances of 3d printing problems.
+  We first show that the minimum turn cost 3d printing problem is NP-hard, even when the region is a simple polygon.  
+  We develop \emph{SFCDecomp}, a space filling curve based decomposition framework to solve large instances of 3d printing problems efficiently by solving these optimization subproblems independently.
+  For the Buddha, our framework builds toolpaths over a total of 799,716 nodes across 169 layers, and for the Bunny it builds toolpaths over 812,733 nodes across 360 layers.
